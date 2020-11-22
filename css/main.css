@@ -1639,7 +1639,7 @@ textarea{
   height: 23px;
 }
 .form-field{
-  outline: 1px solid blue;
+  
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -1687,9 +1687,7 @@ width: 448px;
 height: 120px;
 }
 
-.form-input:focus + .form-label, .form-input:not(:placeholder-shown)+.form-label{
-transform: translate(-22px, -22px);
-}
+
 
 .form-field{
   position: relative;
@@ -1712,7 +1710,20 @@ transform: translate(-22px, -22px);
   transition: all var(--time, --animate);
 
 }
-
-.form-input:placeholder-shown{
-
+.form-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+  transform: translate(-22px, -22px);
+  
 }
+
+.form-icon{
+  position: absolute;
+  top: 50%;
+  left: 0;
+   transform: translateY(-50%);
+  background-color:tomato;
+  width: 20px;
+  height: 20px;
+ 
+}
+
