@@ -1710,11 +1710,11 @@ height: 120px;
   transition: all var(--time, --animate);
 
 }
-.form-input:focus+.form-label,
+/*.form-input:focus+.form-label,
 .form-input:not(:placeholder-shown)+.form-label {
   transform: translate(-22px, -22px);
   
-}
+} */
 
 .form-person{
   position: absolute;
@@ -1727,4 +1727,24 @@ height: 120px;
   fill: black;
  
 }
+/*.form-input:focus ~.form-person{
+  fill: var(--accent-color);
+}
+.form-input:focus{
+  border-color: red;
+} */
 
+.form-field:focus-within >.form-person{
+fill: var(--accent-color);
+}
+
+.form-field:focus-within > .form-label{
+  transform: translate(-22px, -22px);
+   
+}
+.form-field:focus-within > .form-laber {
+  border-color: var(--accent-color);
+}
+.form-input:not(:placeholder-shown)+.form-label{
+  transform: translateY(-22px, -22px);
+}
