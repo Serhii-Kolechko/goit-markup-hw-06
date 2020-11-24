@@ -1716,14 +1716,15 @@ height: 120px;
   
 }
 
-.form-icon{
+.form-person{
   position: absolute;
   top: 50%;
   left: 0;
    transform: translateY(-50%);
-  background-color:tomato;
-  width: 20px;
-  height: 20px;
+  
+  width: 18px;
+  height: 18px;
+  fill: black;
  
 }
 
