@@ -1675,16 +1675,19 @@ textarea{
 
     /* рисуем checkbox */
 .checkbox{
- appearance: none; 
- position: absolute;
- top: 0;
- left: 0;
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
  
 }
 
 .checkbox-label{
-  display: inline-block;
-  outline: 1px solid black;
+
 }
 
 .icon-check {
@@ -1694,13 +1697,16 @@ textarea{
   height: 15px;
   border: 1px solid #2a2a2a;
   border-radius: 2px;
+  margin-right: 10px;
 
 }
 
 .checkbox:checked ~.icon-check{
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-image: url(../img/svg/check.svg);
   background-size: contain;
+  background-origin: border-box;
 }
 
 
