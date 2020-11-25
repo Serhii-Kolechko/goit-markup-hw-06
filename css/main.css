@@ -1810,7 +1810,9 @@ height: 120px;
   width: 18px;
   height: 18px;
   fill: black;
-  mar
+  padding: 14px;
+  background-color: red;
+  margin-left: 14px;
  
 }
 .form-person-span{
