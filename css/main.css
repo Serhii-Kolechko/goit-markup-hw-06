@@ -1898,3 +1898,7 @@ left: 0;
 .telegram-title{
   padding-left: 180px;
 }
+
+.checkbox-link{
+  color: var(--accent-color);
+}
