@@ -1907,6 +1907,9 @@ left: 0;
   margin-right: 12px;
   width: 358px;
   height: 50px;
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
 }
 
 .telegram-title{
@@ -1916,6 +1919,7 @@ left: 0;
   margin-right: 0;
   
 }
+
 
 .checkbox-link{
   color: var(--accent-color);
