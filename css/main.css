@@ -1892,10 +1892,16 @@ left: 0;
 }
 .icon-send{
   position: absolute;
-  top: 12px;
+  top: 0;
   right: 0;
   width: 24px;
   height: 24px;
+  background-color: rgb(255, 0, 34);
+  fill: var(--primary-white-color);
+  margin-right: 28px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  
   
 }
 .footer-input{
@@ -1919,10 +1925,78 @@ left: 0;
   width: 219px;
   height: 16px;
   margin-right: 0;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 0;
   
 }
 
+.telegram-items{
+  width: 570px;
+}
 
 .checkbox-link{
   color: var(--accent-color);
+}
+
+
+.telegram-networks-item {
+  margin-bottom: 0;
+  display: flex;
+  width: 44px;
+  flex-wrap: wrap;
+  
+  align-items: center;
+  padding-bottom: 0;
+}
+
+
+.telegram-form {
+  display: flex;
+}
+
+.telegram-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  border-radius: 4px;
+  /* вертикальная геометрия 158пикселя */
+  display: inline-block;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 50px;
+  border: 4px solid var(--accent-color);
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+  
+
+
+
+}
+
+.telegram-button::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+
+  background-image: url(../img/svg/form.svg#icon-send);
+  fill: var(--primary-white-color);
+
 }
