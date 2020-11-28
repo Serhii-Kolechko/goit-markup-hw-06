@@ -1823,7 +1823,7 @@ height: 120px;
 
     width: 18px;
     height: 18px;
-    fill: black;
+    
 }
 /*.form-input:focus ~.form-person{
   fill: var(--accent-color);
@@ -1834,6 +1834,13 @@ height: 120px;
 
 .form-field:focus-within > .form-person-span >.form-person {
 fill: var(--accent-color);
+
+}
+
+
+
+.form-field:focus-within > .form-input{
+  border: 3px solid var(--accent-color);
 }
 /* 
 .form-field:focus-within > .form-label{
