@@ -1706,6 +1706,7 @@ textarea{
 
     /* рисуем checkbox */
 .checkbox{
+ appearance: none; 
 position: absolute;
 width: 1px;
 height: 1px;
@@ -1714,9 +1715,9 @@ border: 0;
 padding: 0;
 clip: rect(0 0 0 0);
 overflow: hidden;
-
- 
+color: brown;
 }
+
 
 .checkbox-label{
 font-family: Roboto;
@@ -1731,25 +1732,57 @@ color: #757575;
 display: flex;
 align-items: center;
 padding-bottom: 30px;
+position: relative;
+
 }
 
-.icon-check {
- 
+/* .icon-check {
+ position: absolute;
+ top: 3px;
+ left: -15px;
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 1px solid #2a2a2a;
+  border: 1px solid red;
   border-radius: 2px;
   
-
+} */
+.checkbox{
+  appearance: none;
+  position: relative;
+  
+  display: inline-block;
+ border: 1px solid #212121;
+ border-radius: 2px;
+ width: 16px;
+ height: 15px;
 }
 
-.checkbox:checked ~.icon-check{
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
+.checkbox:checked{
   background-image: url(../img/svg/check.svg);
+  background-color: var(--accent-color);
   background-size: contain;
   background-origin: border-box;
+  border: transparent;
+  
+  
+}
+
+
+/* .[checkbox]:checked >.icon-check{
+  background-color: red;
+  background-image: url(../img/svg/close.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+.checkbox:checked ~ .icon-check{
+  border-color: var(--accent-color); */
+
+  /* background-color: var(--accent-color);
+  background-image: url(../img/svg/close.svg)
+  background-size: contain;
+  background-origin: border-box; */
+  
 }
 
 
@@ -1876,7 +1909,34 @@ left: 0;
   position: relative;
 }
 .form-btn{
-  margin-left: 144px;
+  display: flex;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  padding-left: 50px;
+  padding-top: 7px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  border-radius: 4px;
+  /* вертикальная геометрия 158пикселя */
+  
+  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+  border: 4px solid var(--accent-color);
+  cursor: pointer;
+  
+  
+
 }
 
 
@@ -1989,7 +2049,6 @@ left: 0;
   
 
 
-
 }
 
 .telegram-button::after{
@@ -2006,7 +2065,7 @@ left: 0;
   margin-top: 13px;
   margin-bottom: 13px;
 
-  background-image: url(../img/svg/form.svg#icon-send);
-  fill: var(--primary-white-color);
+  background-image: url(../img/svg/telegram.svg);
+  
 
 }
