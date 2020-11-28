@@ -1593,6 +1593,8 @@ display: flex;
   border: 1px solid white;
   background-color: #fff;
   cursor: pointer;
+  margin-top: 8px;
+  margin-right: 8px;
  
 }
 
