@@ -1803,20 +1803,20 @@ height: 120px;
 
 .form-person{
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
    transform: translateY(-50%);
   
   width: 18px;
   height: 18px;
   fill: black;
-  padding: 14px;
+  
   
   margin-left: 14px;
  
 }
 .form-person-span{
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
