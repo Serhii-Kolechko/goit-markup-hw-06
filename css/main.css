@@ -113,6 +113,7 @@ img {
 
 .footer-webstudio-link {
   text-decoration: none;
+  margin-top: 60px;
 }
 
 .webstudio-span {
@@ -261,10 +262,12 @@ img {
 }
 
 section:not(:last-child) {
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 94px;
 }
-
+.footer-section{
+  padding-top: 60px;
+}
 /* наш герой */
 
 .hero {
@@ -331,7 +334,7 @@ section:not(:last-child) {
   border-radius: 4px;
   /* вертикальная геометрия 158пикселя */
   display: inline-block;
-  padding: 10px 32px;
+ 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
   
   
@@ -341,6 +344,8 @@ section:not(:last-child) {
 button.hero-link{
   border: 4px solid var(--accent-color);
   cursor: pointer;
+  width: 200px;
+  height: 50px;
   
 }
 
@@ -779,8 +784,8 @@ h4 {
 
 .logo-clients-four {
   fill: #AFB1B8;
-  width: 79px;
-  height: 42px;
+ width: 79px;
+ height: 42px;
 
   margin-top: 23px;
   margin-bottom: 23px;
@@ -1595,11 +1600,14 @@ display: flex;
   cursor: pointer;
   margin-top: 8px;
   margin-right: 8px;
- 
+
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-origin: border-box;
 }
 
 .icon-close{
-
+position: relative;
 width: 30px;
 height: 30px;
 fill: white;
@@ -1607,8 +1615,18 @@ background-color: white;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 } 
-.icon-close:focus{
-  fill: var(--accent-color);
+.icon-close{
+  background-image: url(../img/svg/modal-close-black.svg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-origin: border-box;
+}
+.icon-close:hover{
+  background-image: url(../img/svg/modal-close-blue.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  
 }
   /* ДЗ НОМЕР 6 РИСУЕМ ФОРМУ */
 textarea{
@@ -1684,9 +1702,10 @@ textarea{
   cursor: pointer;
   
 }
-.form-field input:focus{
+.form-field ~ input:focus{
   border-color: var(--accent-color);
 }
+
 .form-field label{
   margin-bottom: 4px;
 }
@@ -2038,14 +2057,14 @@ left: 0;
   border-radius: 4px;
   /* вертикальная геометрия 158пикселя */
   display: inline-block;
-  padding: 10px 32px;
+ 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   width: 200px;
   height: 50px;
   border: 4px solid var(--accent-color);
   cursor: pointer;
   position: relative;
-  margin-right: 10px;
+  
   
 
 
@@ -2060,12 +2079,19 @@ left: 0;
   display: inline-block;
   width: 24px;
   height: 24px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 13px;
-  margin-bottom: 13px;
+  margin-right: 28px;
+  
+margin-top: 10px;
+  
 
   background-image: url(../img/svg/telegram.svg);
   
 
+}
+.telegram-button-span{
+  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -28px;
+  margin-right: 10px  ;
 }
