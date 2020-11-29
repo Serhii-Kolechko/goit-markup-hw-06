@@ -1896,7 +1896,8 @@ fill: var(--accent-color);
 
 
 .form-field:focus-within > .form-input{
-  border: 3px solid #2196F3;
+  border: 1px solid #2196F3;
+
 }
 /* 
 .form-field:focus-within > .form-label{
